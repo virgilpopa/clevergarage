@@ -1,0 +1,183 @@
+<!--informs the browser what version of HTML is being used - this is the tag for HTML5-->
+<!DOCTYPE html>
+
+<!--Opening html tag & setting the language to English-->
+<html lang="en">
+<head>
+<!--keywords for SEO-->
+<meta name="keywords" content="clever garage, car garage, car service, mot, mot station, mot centre, service station, brakes, exhaust, aircon, car air conditioning, tyres, car wash">
+	
+<!--informs the browser what character set is being used-->
+<meta charset="UTF-8" />
+		
+<!--sets the scale for the windows-->
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+		
+<!--change to match your page content-->
+<meta name="description" content="Clever Garage is one of the most reliable car service and MOT centre in Liverpool.">
+		
+<title>Clever Garage</title>
+
+<!--browser icon-->
+<link rel="icon" type = "image/png" href="images/browser-icon.png">
+<!--icon for apple devices-->
+<link rel="apple-touch-icon" type = "image/png" href="images/browser-icon.png">
+		
+<!-- link to external stylesheets-->
+<link rel="stylesheet" type="text/css" href="css/style.css"/>
+<link rel="stylesheet" type="text/css" href="css/carwash.css"/>
+		
+<!-- link to google fonts -->		
+<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Calistoga&display=swap" rel="stylesheet"> 
+		
+<!-- Load font awesome icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		
+</head>
+<body>
+<div class="container">
+	<!-- first row in the grid-->
+<div class="row" style="background-color:#045FB4">
+	<header>
+	<!-- logo-->
+		<div class="col-9 logo">
+			<a href="index.html"><img src="images/logo.png" alt="logo" title="logo"/></a>
+		</div>
+	<!--text resize-->	
+		<div class="col-3 topright">
+			<h2>Call us on <br/> 0151 333 1800</h2>
+			<img class="resize" alt="Increase text size" src="images/fontincrease.png" onclick="resizeText(1)" />
+			<img class="resize" alt="Decrease text size" src="images/fontdecrease.png" onclick="resizeText(-1)" />
+		</div>
+	</header>
+</div>
+	<!-- start of navigation menu -->
+<div class="row">
+	<nav>	
+		<div class="col-12 topnav" id="myTopnav">
+			<a href="index.html">Home</a>
+			<a href="mot.html">MOT</a>
+			<form class="dropdown" action="service.html">
+				<button type="submit" id="myButton" class="dropbtn">Services&nbsp;<i class="fa fa-caret-down"></i></button>
+					<div class="dropdown-content">
+						<a href="routine.html">Routine Servicing</a>
+						<a href="brakes.html">Brakes&Exhaust</a>
+						<a href="aircon.html">Air Con Repair</a>
+						<a href="tyres.html">Tyres</a>
+						<a href="carwash.html" class="active">Car Wash</a>
+					</div>
+			</form>
+			<a href="contact.html">Contact Us</a>
+			<a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+		</div>
+	</nav>
+</div>
+	<!-- start of content-->
+<div class="row">
+	<div class="col-12 content">
+		<h1>Hand Car Wash</h1>
+		<p>At Clever Garage, if you haven't got any issues with your car (fingers crossed), you can always spoil your car with one of our valeting services.</p>
+	</div>
+</div>
+<div class="row">
+	<div class="col-12 images" style="padding-top:15px">
+		<img id="myImg" src="images/carwash1.jpg" alt="image of car being washed with pressure washer" width="300" height="200">
+		<img id="myImg1" src="images/carwash2.jpg" alt="image of car being hand washed" width="300" height="200">
+		<img id="myImg2" src="images/carwash3.jpg" alt="image of car being polished" width="300" height="200">
+		<!-- The Modal -->
+		<div id="myModal" class="modal">
+			<span class="close">×</span>
+			<img class="modal-content" id="img01" src="#" alt="image of car being washed with pressure washer"/>
+			<img class="modal-content" id="img02" src="#" alt="image of car being hand washed"/>
+			<img class="modal-content" id="img03" src="#" alt="image of car being polished"/>
+		</div>
+	</div>
+</div>
+<div class="row">
+	<div class="col-12 content" style="padding-top:15px">		
+		<p>You can find a price list in the table below:</P>
+		<table>
+			<tr>
+				<th style="color:#045FB4">Car Category</th>
+				<th style="background-color: #cd7f32;">Bronze<br/>Exterior only</th>
+				<th style="background-color: #aaa9ad;">Silver<br/>Exterior and vaccum</th>
+				<th style="background-color: #FFD700;">Gold<br/>Exterior, vaccum and interior</th>
+			</tr>
+			<tr>
+				<td>Small Car</td>
+				<td>£6</td>
+				<td>£12</td>
+				<td>£20</td>
+			</tr>
+			<tr>
+				<td>Medium Car</td>
+				<td>£7</td>
+				<td>£15</td>
+				<td>£25</td>
+			</tr>
+			<tr>
+				<td>Van/Large/Luxury</td>
+				<td>£10</td>
+				<td>£18</td>
+				<td>£30</td>
+			</tr>
+		</table>
+	</div>
+</div>
+	<!--end of content-->
+	<!--footer-->
+<div class="row" style="background-color:#045FB4">
+	<footer>
+		<div class="col-4 copyright">
+		<h3>©2019 Clever Garage</h3>
+		</div>
+			<div id="policies"><a href="Privacy_Policy.pdf" download>Privacy Policy</a>&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+			<a href="Terms&Conditions.pdf" download>Terms & Conditions</a></div>
+		<br/>
+		<div class="col-4 media">
+			<a href="https://www.youtube.com/"><img class="social" src="images/youtube.png" alt="youtube link"/></a>
+			<a href="https://www.facebook.com/"><img class="social" src="images/facebook.png" alt="facebook link"/></a>
+			<a href="https://www.twitter.com/"><img class="social" src="images/twitter.png" alt="twitter link"/></a>
+		</div>
+	</footer>
+</div>
+</div>
+<script>
+// Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById('myImg');
+var modalImg = document.getElementById("img01");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+}
+
+var img = document.getElementById('myImg1');
+var modalImg = document.getElementById("img02");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+}
+
+var img = document.getElementById('myImg2');
+var modalImg = document.getElementById("img03");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+  modal.style.display = "none";
+}
+</script>
+
+</body>
+</html>
+		

@@ -1,0 +1,159 @@
+<!--informs the browser what version of HTML is being used - this is the tag for HTML5-->
+<!DOCTYPE html>
+
+<!--Opening html tag & setting the language to English-->
+<html lang="en">
+<head>
+<!--keywords for SEO-->
+<meta name="keywords" content="clever garage, car garage, car service, mot, mot station, mot centre, service station, brakes, exhaust, aircon, car air conditioning, tyres, car wash">
+	
+<!--informs the browser what character set is being used-->
+<meta charset="UTF-8" />
+		
+<!--sets the scale for the windows-->
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+		
+<!--change to match your page content-->
+<meta name="description" content="Clever Garage is one of the most reliable car service and MOT centre in Liverpool.">
+		
+<title>Clever Garage</title>
+
+<!--browser icon-->
+<link rel="icon" type = "image/png" href="images/browser-icon.png">
+<!--icon for apple devices-->
+<link rel="apple-touch-icon" type = "image/png" href="images/browser-icon.png">
+		
+<!-- link to external stylesheets-->
+<link rel="stylesheet" type="text/css" href="css/contact.css"/>
+<link rel="stylesheet" type="text/css" href="css/style.css"/>
+
+		
+<!-- link to google fonts -->		
+<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Calistoga&display=swap" rel="stylesheet">  
+		
+<!-- Load font awesome icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		
+<!--link to an external JS file-->
+<script src="script/main.js"></script>
+
+<style>
+
+</style>
+
+</head>
+<body>
+<div class="container">
+	<!-- first row in the grid-->
+<div class="row" style="background-color:#045FB4">
+	<header>
+	<!-- logo-->
+		<div class="col-9 logo">
+			<a href="index.html"><img src="images/logo.png" alt="logo" title="logo"/></a>
+		</div>
+	<!--text resize-->	
+		<div class="col-3 topright">
+			<h2>Call us on <br/> 0151 333 1800</h2>
+			<img class="resize" alt="Increase text size" src="images/fontincrease.png" onclick="resizeText(1)" />
+			<img class="resize" alt="Decrease text size" src="images/fontdecrease.png" onclick="resizeText(-1)" />
+		</div>
+	</header>
+</div>
+	<!-- start of navigation menu -->
+<div class="row">
+	<nav>	
+		<div class="col-12 topnav" id="myTopnav">
+			<a href="index.html">Home</a>
+			<a href="mot.html">MOT</a>
+			<form class="dropdown" action="service.html">
+				<button type="submit" id="myButton" class="dropbtn">Services&nbsp;<i class="fa fa-caret-down"></i></button>
+					<div class="dropdown-content">
+						<a href="routine.html">Routine Servicing</a>
+						<a href="brakes.html">Brakes&Exhaust</a>
+						<a href="aircon.html">Air Con Repair</a>
+						<a href="tyres.html">Tyres</a>
+						<a href="carwash.html">Car Wash</a>
+					</div>
+			</form>
+			<a href="contact.html" class="active">Contact Us</a>
+			<a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+		</div>
+	</nav>
+</div>
+	<!-- start of content-->
+<div class="row" style="border-left:2px solid #045FB4;border-right:2px solid #045FB4">
+	<div class="col-12"><h1>Contact Us!</h1></div>
+		<!--start of online form-->
+	<div class="col-6 contact1">
+		<h4>Get a FREE quote today!</h4>
+		<p>You are guaranteed a prompt, professional and friendly service.</p><br/>
+		<p>Simply fill in the form below or call using the telephone number provided for all your car service requirements</p>
+			
+		<form name="inputform" method="post" action="mailto:address@anywhere" enctype="text/plain" onsubmit="return validate_form();">
+			<p>
+				<label for="fname"></label>
+				<input type="text" id="fname" name="firstname" placeholder="Your first name..."/>
+			</p>
+			<p>
+				<label for="lname"></label>
+				<input type="text" id="lname" name="lastname" placeholder="Your last name..."/>
+			</p>
+				
+			<p>
+				<label></label>
+				<input type="text" name="email" placeholder="Your email address..."/>
+			</p>
+			<p>
+				<label for="subject"></label>
+				<textarea id="subject" name="subject" placeholder="Write message here..." rows="10" cols="40"></textarea>
+			</p>
+			<p>
+				<label>
+					<input type="submit" value="Submit">
+				</label>
+				<label>
+					<input type="reset" value="Reset">
+				</label>		
+			</p>		
+		</form>
+	</div><!--end of online form-->
+	<div class="col-5 contact2">
+		<h2>Garage address</h2>
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d76127.8820908809!2d-2.93479584799399!3d53.39700580098108!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487b205350bf1205%3A0x53a5f981d0b05c02!2sWoodcroft%20Garage!5e0!3m2!1sen!2suk!4v1576514226489!5m2!1sen!2suk"></iframe><br/>
+		<form action="http://maps.google.com/maps" method="get" target="_blank">
+			<input type="text" name="saddr" placeholder="Enter your location here..."/>
+			<input type="hidden" name="daddr" value="62-68 Lawrence Road,Liverpool,L15 0EG" />
+			<input type="submit" value="Get directions" />
+		</form>
+		<h4>CLEVER GARAGE</h4><h5>62-68 Lawrence Road<br/>Liverpool<br/>L15 0EG<br/><br/>0151 333 1800</h5>
+		<h2>Opening Times</h2>
+		<p>Monday 8:30 - 17:00</p>
+		<p>Tuesday 8:30 - 17:00</p>
+		<p>Wednesday 8:30 - 17:00</p>
+		<p>Thursday 8:30 - 17:00</p>
+		<p>Friday 8:30 - 17:00</p>
+		<p>Saturday 8:30 - 15:00</p>
+	</div>
+</div>
+	<!--end of content-->
+	<!--footer-->
+<div class="row" style="background-color:#045FB4">
+	<footer>
+		<div class="col-4 copyright">
+		<h3>©2019 Clever Garage</h3>
+		</div>
+			<div id="policies"><a href="Privacy_Policy.pdf" download>Privacy Policy</a>&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+			<a href="Terms&Conditions.pdf" download>Terms & Conditions</a></div>
+		<br/>
+		<div class="col-4 media">
+			<a href="https://www.youtube.com/"><img class="social" src="images/youtube.png" alt="youtube link"/></a>
+			<a href="https://www.facebook.com/"><img class="social" src="images/facebook.png" alt="facebook link"/></a>
+			<a href="https://www.twitter.com/"><img class="social" src="images/twitter.png" alt="twitter link"/></a>
+		</div>
+	</footer>
+</div>
+</div>
+
+</body>
+</html>

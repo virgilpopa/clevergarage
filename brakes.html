@@ -1,0 +1,115 @@
+<!--informs the browser what version of HTML is being used - this is the tag for HTML5-->
+<!DOCTYPE html>
+
+<!--Opening html tag & setting the language to English-->
+<html lang="en">
+<head>
+<!--keywords for SEO-->
+<meta name="keywords" content="clever garage, car garage, car service, mot, mot station, mot centre, service station, brakes, exhaust, aircon, car air conditioning, tyres, car wash">
+	
+<!--informs the browser what character set is being used-->
+<meta charset="UTF-8" />
+		
+<!--sets the scale for the windows-->
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+		
+<!--change to match your page content-->
+<meta name="description" content="Clever Garage is one of the most reliable car service and MOT centre in Liverpool.">
+		
+<title>Clever Garage</title>
+
+<!--browser icon-->
+<link rel="icon" type = "image/png" href="images/browser-icon.png">
+<!--icon for apple devices-->
+<link rel="apple-touch-icon" type = "image/png" href="images/browser-icon.png">
+		
+<!-- link to external stylesheets-->
+<link rel="stylesheet" type="text/css" href="css/style.css"/>
+		
+<!-- link to google fonts -->		
+<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Calistoga&display=swap" rel="stylesheet"> 
+		
+<!-- Load font awesome icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		
+<!--link to an external JS file-->
+<script src="script/main.js"></script>
+
+</head>
+<body>
+<div class="container">
+	<!-- first row in the grid-->
+<div class="row" style="background-color:#045FB4">
+	<header>
+	<!-- logo-->
+		<div class="col-9 logo">
+			<a href="index.html"><img src="images/logo.png" alt="logo" title="logo"/></a>
+		</div>
+	<!--text resize-->	
+		<div class="col-3 topright">
+			<h2>Call us on <br/> 0151 333 1800</h2>
+			<img class="resize" alt="Increase text size" src="images/fontincrease.png" onclick="resizeText(1)" />
+			<img class="resize" alt="Decrease text size" src="images/fontdecrease.png" onclick="resizeText(-1)" />
+		</div>
+	</header>
+</div>
+	<!-- start of navigation menu -->
+<div class="row">
+	<nav>	
+		<div class="col-12 topnav" id="myTopnav">
+			<a href="index.html">Home</a>
+			<a href="mot.html">MOT</a>
+			<form class="dropdown" action="service.html">
+				<button type="submit" id="myButton" class="dropbtn">Services&nbsp;<i class="fa fa-caret-down"></i></button>
+					<div class="dropdown-content">
+						<a href="routine.html">Routine Servicing</a>
+						<a href="brakes.html" class="active">Brakes&Exhaust</a>
+						<a href="aircon.html">Air Con Repair</a>
+						<a href="tyres.html">Tyres</a>
+						<a href="carwash.html">Car Wash</a>
+					</div>
+			</form>
+			<a href="contact.html">Contact Us</a>
+			<a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+		</div>
+	</nav>
+</div>
+	<!-- start of content-->
+<div class="row">
+	<div class="col-12 content">
+		<h1>Brakes and Exhaust System</h1>
+		<img class="mainimg" src="images/brakes.jpg" alt="image of exhaust pipe">
+		<p style="padding-top:1%">These are 2 very vital pieces of your car. If you don’t have brakes you won’t stop, if you don’t have an exhaust your car would be very noisy and waste a lot of fuel. They are also items that wear away with time so you need to make sure they are checked and serviced regularly. If you don’t have them checked by a reputable exhaust garage, you could wind up with a big bill when a simple weld could have stopped it from breaking.</p>
+		<h2 style="padding-left:10%;color:#045FB4">Brake System</h2>
+		<p><strong>At Clever Garage, we can fit Front or Rear Brake Pads from £39.99 inc VAT!</strong></p>
+		<p>We will happily give you a FREE BRAKE CHECK. If you wish to book in for this, give us a call on 0151 333 1800 or fill in the contact form to contact us by email.</p>
+		<h2 style="padding-left:10%;color:#045FB4">Exhaust System</h2>
+		<p>It is very difficult to price an exhaust repair without knowing the full details of your car or why does it need repair, but we can tell you that the most basic of <strong>exhaust repairs start from £30.00</strong>.</p>
+		<p>If you feel you need your exhaust looking at then it’s time to book it in with us. The best thing to do is pick up the phone and call us direct on 0151 737 1520. However, you can fill in the form available on our contact us page for one of the team to get back to you.</p>
+		<div class="booking">
+			<a href="contact.html" class="bookbtn">Book Now</a>
+		</div>
+	</div>
+</div>
+	<!--end of content-->
+	<!--footer-->
+<div class="row" style="background-color:#045FB4">
+	<footer>
+		<div class="col-4 copyright">
+		<h3>©2019 Clever Garage</h3>
+		</div>
+			<div id="policies"><a href="Privacy_Policy.pdf" download>Privacy Policy</a>&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+			<a href="Terms&Conditions.pdf" download>Terms & Conditions</a></div>
+		<br/>
+		<div class="col-4 media">
+			<a href="https://www.youtube.com/"><img class="social" src="images/youtube.png" alt="youtube link"/></a>
+			<a href="https://www.facebook.com/"><img class="social" src="images/facebook.png" alt="facebook link"/></a>
+			<a href="https://www.twitter.com/"><img class="social" src="images/twitter.png" alt="twitter link"/></a>
+		</div>
+	</footer>
+</div>
+</div>
+
+</body>
+</html>

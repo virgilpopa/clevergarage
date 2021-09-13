@@ -1,0 +1,173 @@
+<!--informs the browser what version of HTML is being used - this is the tag for HTML5-->
+<!DOCTYPE html>
+
+<!--Opening html tag & setting the language to English-->
+<html lang="en">
+<head>
+<!--keywords for SEO-->
+<meta name="keywords" content="clever garage, car garage, car service, mot, mot station, mot centre, service station, brakes, exhaust, aircon, car air conditioning, tyres, car wash">
+
+<!--informs the browser what character set is being used-->
+<meta charset="UTF-8" />
+		
+<!--sets the scale for the windows-->
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+		
+<!--description shown on search engines-->
+<meta name="description" content="Clever Garage is one of the most reliable car service and MOT centre in Liverpool.">
+		
+<title>Clever Garage</title>
+
+<!--browser icon-->
+<link rel="icon" type = "image/png" href="images/browser-icon.png">
+<!--icon for apple devices-->
+<link rel="apple-touch-icon" type = "image/png" href="images/browser-icon.png">
+		
+<!-- link to external stylesheets-->
+<link rel="stylesheet" type="text/css" href="css/style.css"/>
+		
+<!-- link to google fonts -->		
+<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Calistoga&display=swap" rel="stylesheet">  
+		
+<!-- Load font awesome icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		
+<!--link to an external JS file-->
+<script src="script/main.js"></script>
+
+</head>
+<body>
+<div class="container">
+	<!-- first row in the grid-->
+<div class="row" style="background-color:#045FB4">
+	<header>
+	<!-- logo-->
+		<div class="col-9 logo">
+			<a href="index.html"><img src="images/logo.png" alt="logo" title="logo"/></a>
+		</div>
+	<!--text resize-->	
+		<div class="col-3 topright">
+			<h2>Call us on <br/> 0151 333 1800</h2>
+			<img class="resize" alt="Increase text size" src="images/fontincrease.png" onclick="resizeText(1)" />
+			<img class="resize" alt="Decrease text size" src="images/fontdecrease.png" onclick="resizeText(-1)" />
+		</div>
+	</header>
+</div>
+	<!-- start of navigation menu -->
+<div class="row">
+	<nav>	
+		<div class="col-12 topnav" id="myTopnav">
+			<a href="index.html" class="active">Home</a>
+			<a href="mot.html">MOT</a>
+			<form class="dropdown" action="service.html">
+				<button type="submit" id="myButton" class="dropbtn">Services&nbsp;<i class="fa fa-caret-down"></i></button>
+					<div class="dropdown-content">
+						<a href="routine.html">Routine Servicing</a>
+						<a href="brakes.html">Brakes&Exhaust</a>
+						<a href="aircon.html">Air Con Repair</a>
+						<a href="tyres.html">Tyres</a>
+						<a href="carwash.html">Car Wash</a>
+					</div>
+			</form>
+			<a href="contact.html">Contact Us</a>
+			<a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+		</div>
+	</nav>
+</div>
+	<!-- start of content-->
+<div class="row">
+	<div class="col-12 content">
+		<h1>Welcome to Clever Garage!</h1>
+		<div class="slideshow-container">
+			<div class="mySlides fade">
+				<img src="images/slideimage.jpg" alt="Man holding spanners image">
+			 </div>
+
+			<div class="mySlides fade">
+				<img src="images/slideimage1.jpg" alt="Man check engine image">
+			 </div>
+
+			<div class="mySlides fade">
+				<img src="images/slideimage2.jpg" alt="service image">
+			</div>
+			
+			<div class="mySlides fade">
+				<img src="images/slideimage3.jpg" alt="Car on elevator in service image">
+			 </div>
+		<!--Clickable arrow code-->
+			<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+			<a class="next" onclick="plusSlides(1)">&#10095;</a>
+		</div>
+		<br>
+		<!--dots to change slide images-->
+		<div style="text-align:center">
+			<span class="dot" onclick="currentSlide(1)"></span> 
+			<span class="dot" onclick="currentSlide(2)"></span> 
+			<span class="dot" onclick="currentSlide(3)"></span>
+			<span class="dot" onclick="currentSlide(4)"></span> 
+ 
+		</div>
+	</div><!--end of slider html code-->
+</div>
+<div class="row">
+	<div class="col-12 content" style="padding-top:15px">
+		
+		<p>A Family owned business, Clever Garage offers all aspects of car servicing and maintenance.</p>
+		<p>If you’re looking for a reliable garage in Liverpool, look no further than Clever Garage. Our mechanics are fully qualified and vastly experienced in working on all types of cars and light commercial vans. We complete our work to the highest standard at very competitive prices. We are always at hand to explain all options available to you and offer valuable free advice on all your car repairs and anything to do with your vehicle.</p>
+		<div class="booking">
+			<a href="contact.html" class="bookbtn">Book Now</a>
+		</div>
+	</div>
+</div>
+	<!--end of content-->
+	<!--footer-->
+<div class="row">
+	<footer>
+		<div class="col-4 copyright">
+		<h3>©2019 Clever Garage</h3>
+		</div>
+			<div id="policies"><a href="Privacy_Policy.pdf" download>Privacy Policy</a>&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+			<a href="Terms&Conditions.pdf" download>Terms & Conditions</a></div>
+		<br/>
+		<div class="col-4 media">
+			<a href="https://www.youtube.com/"><img class="social" src="images/youtube.png" alt="youtube link"/></a>
+			<a href="https://www.facebook.com/"><img class="social" src="images/facebook.png" alt="facebook link"/></a>
+			<a href="https://www.twitter.com/"><img class="social" src="images/twitter.png" alt="twitter link"/></a>
+		</div>
+	</footer>
+</div>
+</div>
+<script>
+	//start of user controlled slider
+	var slideIndex = 1;
+	showSlides(slideIndex);
+
+	function plusSlides(n) {
+	  showSlides(slideIndex += n);
+	}
+
+	function currentSlide(n) {
+	  showSlides(slideIndex = n);
+	}
+
+	function showSlides(n) {
+	  var i;
+	  var slides = document.getElementsByClassName("mySlides");
+	  var dots = document.getElementsByClassName("dot");
+	  if (n > slides.length) {slideIndex = 1}    
+	  if (n < 1) {slideIndex = slides.length}
+	  for (i = 0; i < slides.length; i++) {
+		  slides[i].style.display = "none";  
+	  }
+	  for (i = 0; i < dots.length; i++) {
+		  dots[i].className = dots[i].className.replace(" active", "");
+	  }
+	  slides[slideIndex-1].style.display = "block";  
+	  dots[slideIndex-1].className += " active";
+	}
+
+</script>
+</body>
+</html>
+		
